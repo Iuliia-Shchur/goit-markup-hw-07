@@ -1,7 +1,13 @@
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: 0;
-  pointer-events: none;
+.backdrop {
+  .is-hidden {
+    opacity: 0;
+    visibility: 0;
+    pointer-events: none;
+  }
+}
+
+&modal {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .backdrop {
@@ -18,9 +24,9 @@
   z-index: 2;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
-}
+// .backdrop.is-hidden .modal {
+//   transform: translate(-50%, -50%) scale(1.2);
+// }
 
 .modal {
   position: absolute;
@@ -57,11 +63,15 @@
   cursor: pointer;
 }
 
-&:hover .modal__icon {
-  fill: var(--primary-logo-color);
-}
+// .modal__button:hover .modal__icon {
+//   fill: var(--primary-logo-color);
+// }
 
 .modal__icon {
   fill: var(--secondary-logo-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__button:hover & {
+    fill: var(--primary-logo-color);
+  }
 }

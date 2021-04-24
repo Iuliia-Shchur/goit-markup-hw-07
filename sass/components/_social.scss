@@ -22,7 +22,14 @@
   background-color: var(--primary-logo-color);
 }
 
-&:hover .social__icon,
-&:focus .social__icon {
-  fill: var(--address-color);
+// &:hover .social__icon,
+// &:focus .social__icon {
+//   fill: var(--address-color);
+// }
+
+.social__icon {
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--address-color);
+  }
 }
