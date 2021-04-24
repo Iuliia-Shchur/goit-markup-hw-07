@@ -2,6 +2,6 @@
   display: flex;
 }
 
-.header-list .item:not(:last-child) {
-  margin-right: 50px;
+.header--border {
+  border-bottom: 1px solid #ececec;
 }
