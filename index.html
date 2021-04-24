@@ -133,44 +133,22 @@
                     </svg>
                   </div>
 
-                  <div class="form-field-comment">
-                    <label class="form-field__label" for="user-comment"
-                      >Комментарий</label
-                    >
-                    <textarea
-                      class="form-field__input form-textarea"
-                      name="comment"
-                      id="user-comment"
-                      cols="30"
-                      rows="10"
-                      placeholder="Введите текст"
-                    ></textarea>
+                  <div class="form-field form-field--flex">
+                    <label class="form-field__label" for="user-comment">Комментарий</label>
+                    <textarea class="form-field__input form-field__input--size" name="comment" id="user-comment" cols="30" rows="10"
+                      placeholder="Введите текст"></textarea>
                   </div>
-
-                  <div class="form-field-agreement">
-                    <label class="form-agreement">
-                      <input
-                        class="agreement-checkbox"
-                        type="checkbox"
-                        name="agree"
-                        value="agreement"
-                      />
-                      <svg
-                        class="agreement-checkbox-icon"
-                        width="11"
-                        height="8"
-                      >
+                  
+                  <div class="form-checkbox">
+                    <label class="form-checkbox__label">
+                      <input class="form-checkbox__input" type="checkbox" name="agree" value="agreement">
+                      <svg class="form-checkbox__icon" width="11" height="8">
                         <use href="./img/sprite/icons.svg#icon-check"></use>
                       </svg>
-                      Соглашаюсь с рассылкой и принимаю
-                      <a class="form-agreement-contract" href=""
-                        >Условия договора</a
-                      >
+                      Соглашаюсь с рассылкой и принимаю <a class="form-checkbox__link" href="">Условия договора</a>
                     </label>
                   </div>
-                  <button class="form-button hero-button" type="submit">
-                    Отправить
-                  </button>
+                  <button class="form-button button" type="submit">Отправить</button>
                 </div>
               </form>
             </div>
