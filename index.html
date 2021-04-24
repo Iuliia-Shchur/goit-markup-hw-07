@@ -77,28 +77,28 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-close-btn" data-modal-close type="button">
-                <svg class="modal-close-icon" width="18" height="18">
+              <button class="modal__button" data-modal-close type="button">
+                <svg class="modal__icon modal__icon--close-fill" width="18" height="18">
                   <use href="./img/sprite/icons.svg#icon-close-1"></use>
                 </svg>
               </button>
 
               <form>
                 <div class="modal-form" role="group">
-                  <b class="modal-form-title"
+                  <b class="modal-form__title"
                     >Оставьте свои данные, мы вам перезвоним</b
                   >
 
                   <div class="form-field">
-                    <label class="form-label" for="username">Имя</label>
+                    <label class="form-field__label" for="username">Имя</label>
                     <input
-                      class="form-input"
+                      class="form-field__input"
                       type="text"
                       name="name"
                       id="username"
                       autofocus
                     />
-                    <svg class="form-input-icon" width="18" height="18">
+                    <svg class="form-field__icon" width="18" height="18">
                       <use
                         href="./img/sprite/icons.svg#icon-person-black"
                       ></use>
@@ -106,39 +106,39 @@
                   </div>
 
                   <div class="form-field">
-                    <label class="form-label" for="user-telephone"
+                    <label class="form-field__label" for="user-telephone"
                       >Телефон</label
                     >
                     <input
-                      class="form-input"
+                      class="form-field__input"
                       type="tel"
                       name="telephone"
                       id="user-telephone"
                     />
-                    <svg class="form-input-icon" width="18" height="18">
+                    <svg class="form-field__icon" width="18" height="18">
                       <use href="./img/sprite/icons.svg#icon-phone-black"></use>
                     </svg>
                   </div>
 
                   <div class="form-field">
-                    <label class="form-label" for="user-mail">Почта</label>
+                    <label class="form-field__label" for="user-mail">Почта</label>
                     <input
-                      class="form-input"
+                      class="form-field__input"
                       type="email"
                       name="email"
                       id="user-mail"
                     />
-                    <svg class="form-input-icon" width="18" height="18">
+                    <svg class="form-field__icon" width="18" height="18">
                       <use href="./img/sprite/icons.svg#icon-email-black"></use>
                     </svg>
                   </div>
 
                   <div class="form-field-comment">
-                    <label class="form-label" for="user-comment"
+                    <label class="form-field__label" for="user-comment"
                       >Комментарий</label
                     >
                     <textarea
-                      class="form-input form-textarea"
+                      class="form-field__input form-textarea"
                       name="comment"
                       id="user-comment"
                       cols="30"
